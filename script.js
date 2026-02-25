@@ -1,4 +1,4 @@
-﻿const topbar = document.getElementById('topbar');
+const topbar = document.getElementById('topbar');
 const revealElements = document.querySelectorAll('.reveal');
 const searchForm = document.getElementById('search-form');
 const quickOp = document.getElementById('quick-operation');

@@ -1,4 +1,4 @@
-﻿# InmobiliariaLeadMockup
+# InmobiliariaLeadMockup
 
 Sitio web estatico de una inmobiliaria ficticia para demo comercial.
 Incluye catalogo de propiedades, filtros, modal de detalle, zonas, equipo y formulario de contacto.

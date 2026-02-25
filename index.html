@@ -1,0 +1,372 @@
+﻿<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aurea Inmobiliaria | Propiedades en Venta y Alquiler</title>
+    <meta
+      name="description"
+      content="Aurea Inmobiliaria: departamentos, casas, cocheras y terrenos en venta y alquiler. Descubre oportunidades en las mejores zonas."
+    />
+    <meta property="og:title" content="Aurea Inmobiliaria" />
+    <meta property="og:description" content="Propiedades en venta y alquiler con asesoramiento profesional." />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar" id="topbar">
+      <div class="container nav-inner">
+        <a href="#inicio" class="brand">
+          <span class="brand-mark">AI</span>
+          <span class="brand-text">AUREA INMOBILIARIA</span>
+        </a>
+
+        <nav class="menu">
+          <a href="#propiedades">Propiedades</a>
+          <a href="#zonas">Zonas</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#equipo">Equipo</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+
+        <a href="#contacto" class="btn btn-ghost">Tasacion gratuita</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-glow hero-glow-a"></div>
+        <div class="hero-glow hero-glow-b"></div>
+
+        <div class="container hero-content reveal">
+          <p class="eyebrow">Inmobiliaria Ficticia - Demo Comercial</p>
+          <h1>Encuentra tu proxima propiedad con una experiencia premium.</h1>
+          <p class="subtitle">
+            Publicaciones de alta calidad, asesoramiento humano y seguimiento integral para
+            compradores, vendedores e inversores.
+          </p>
+
+          <form class="search-panel" id="search-form">
+            <div class="field">
+              <label for="operation">Operacion</label>
+              <select id="operation" name="operation">
+                <option value="">Todas</option>
+                <option value="venta">Venta</option>
+                <option value="alquiler">Alquiler</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="type">Tipo</label>
+              <select id="type" name="type">
+                <option value="">Todos</option>
+                <option value="departamento">Departamento</option>
+                <option value="casa">Casa</option>
+                <option value="cochera">Cochera</option>
+                <option value="terreno">Terreno</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="zone">Zona</label>
+              <input id="zone" name="zone" type="text" placeholder="Palermo, Recoleta, Canning..." />
+            </div>
+
+            <button class="btn btn-primary" type="submit">Buscar propiedades</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="metrics container reveal" aria-label="Metricas de la inmobiliaria">
+        <article>
+          <h3 data-count="186">0</h3>
+          <p>Propiedades activas</p>
+        </article>
+        <article>
+          <h3 data-count="52">0</h3>
+          <p>Operaciones cerradas este trimestre</p>
+        </article>
+        <article>
+          <h3 data-count="24">0</h3>
+          <p>Horas promedio de respuesta</p>
+        </article>
+        <article>
+          <h3 data-count="97">0</h3>
+          <p>% de clientes recomendando el servicio</p>
+        </article>
+      </section>
+
+      <section class="section container" id="propiedades">
+        <div class="section-head reveal">
+          <p class="eyebrow dark">Catalogo destacado</p>
+          <h2>Propiedades seleccionadas para vivir, invertir o generar renta</h2>
+        </div>
+
+        <div class="toolbar reveal">
+          <div class="segment" id="quick-operation">
+            <button type="button" class="active" data-op="">Todas</button>
+            <button type="button" data-op="venta">Venta</button>
+            <button type="button" data-op="alquiler">Alquiler</button>
+          </div>
+          <p id="result-count">Mostrando 6 propiedades</p>
+        </div>
+
+        <div class="listing-grid" id="property-grid">
+          <article class="listing-card reveal" data-operation="venta" data-type="departamento" data-zone="palermo caba">
+            <img src="./assets/dept2.jpg" alt="Departamento en Palermo" />
+            <div class="listing-body">
+              <div class="tags"><span>Venta</span><span>Departamento</span></div>
+              <h3>Departamento 3 ambientes en Palermo</h3>
+              <p>Balcon corrido, cocina integrada y excelente iluminacion.</p>
+              <ul>
+                <li>72 m2</li>
+                <li>2 dormitorios</li>
+                <li>1 bano</li>
+              </ul>
+              <div class="listing-footer">
+                <strong>USD 120.000</strong>
+                <button class="btn btn-secondary open-modal" data-id="p1" type="button">Ver detalle</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="listing-card reveal" data-operation="alquiler" data-type="departamento" data-zone="belgrano caba">
+            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80" alt="Departamento en Belgrano" />
+            <div class="listing-body">
+              <div class="tags"><span>Alquiler</span><span>Departamento</span></div>
+              <h3>Semipiso moderno en Belgrano</h3>
+              <p>Edificio premium con amenities, seguridad y cochera opcional.</p>
+              <ul>
+                <li>89 m2</li>
+                <li>2 dormitorios</li>
+                <li>2 banos</li>
+              </ul>
+              <div class="listing-footer">
+                <strong>ARS 980.000/mes</strong>
+                <button class="btn btn-secondary open-modal" data-id="p2" type="button">Ver detalle</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="listing-card reveal" data-operation="venta" data-type="casa" data-zone="canning buenos aires">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" alt="Casa en Canning" />
+            <div class="listing-body">
+              <div class="tags"><span>Venta</span><span>Casa</span></div>
+              <h3>Casa de diseno en barrio privado</h3>
+              <p>Jardin parquizado, pileta y quincho. Ideal para familia.</p>
+              <ul>
+                <li>240 m2 cubiertos</li>
+                <li>4 dormitorios</li>
+                <li>3 banos</li>
+              </ul>
+              <div class="listing-footer">
+                <strong>USD 340.000</strong>
+                <button class="btn btn-secondary open-modal" data-id="p3" type="button">Ver detalle</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="listing-card reveal" data-operation="venta" data-type="cochera" data-zone="recoleta caba">
+            <img src="./assets/dept1.webp" alt="Cochera en Recoleta" />
+            <div class="listing-body">
+              <div class="tags"><span>Venta</span><span>Cochera</span></div>
+              <h3>Cochera fija cubierta en Recoleta</h3>
+              <p>Acceso 24h con control remoto y seguridad permanente.</p>
+              <ul>
+                <li>12 m2</li>
+                <li>Acceso automatico</li>
+                <li>Seguridad</li>
+              </ul>
+              <div class="listing-footer">
+                <strong>USD 18.000</strong>
+                <button class="btn btn-secondary open-modal" data-id="p4" type="button">Ver detalle</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="listing-card reveal" data-operation="venta" data-type="terreno" data-zone="canning buenos aires">
+            <img src="./assets/dept3.webp" alt="Terreno en Canning" />
+            <div class="listing-body">
+              <div class="tags"><span>Venta</span><span>Terreno</span></div>
+              <h3>Lote residencial en Canning</h3>
+              <p>500 m2 con excelente orientacion en zona de crecimiento.</p>
+              <ul>
+                <li>500 m2</li>
+                <li>Servicios en puerta</li>
+                <li>Baja expensa</li>
+              </ul>
+              <div class="listing-footer">
+                <strong>USD 65.000</strong>
+                <button class="btn btn-secondary open-modal" data-id="p5" type="button">Ver detalle</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="listing-card reveal" data-operation="alquiler" data-type="casa" data-zone="nordelta tigre">
+            <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1200&q=80" alt="Casa en Nordelta" />
+            <div class="listing-body">
+              <div class="tags"><span>Alquiler</span><span>Casa</span></div>
+              <h3>Casa al lago en Nordelta</h3>
+              <p>Vista abierta, muelle propio y espacios integrados premium.</p>
+              <ul>
+                <li>300 m2</li>
+                <li>4 dormitorios</li>
+                <li>Dependencia</li>
+              </ul>
+              <div class="listing-footer">
+                <strong>USD 3.200/mes</strong>
+                <button class="btn btn-secondary open-modal" data-id="p6" type="button">Ver detalle</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container zones" id="zonas">
+        <div class="section-head reveal">
+          <p class="eyebrow dark">Zonas destacadas</p>
+          <h2>Trabajamos los barrios con mayor demanda y valorizacion</h2>
+        </div>
+
+        <div class="zones-grid">
+          <article class="zone-card reveal">
+            <h3>Palermo</h3>
+            <p>Alta demanda de departamentos para vivienda y renta temporaria.</p>
+          </article>
+          <article class="zone-card reveal">
+            <h3>Recoleta</h3>
+            <p>Ubicacion consolidada para inversores de perfil conservador.</p>
+          </article>
+          <article class="zone-card reveal">
+            <h3>Canning</h3>
+            <p>Crecimiento sostenido en lotes y casas en barrios privados.</p>
+          </article>
+          <article class="zone-card reveal">
+            <h3>Nordelta</h3>
+            <p>Segmento premium para familias y ejecutivos de alta gama.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container" id="servicios">
+        <div class="section-head reveal">
+          <p class="eyebrow dark">Servicios inmobiliarios</p>
+          <h2>Acompaniamiento completo para cada tipo de cliente</h2>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card reveal">
+            <h3>Para compradores</h3>
+            <p>Busqueda personalizada, visitas coordinadas y estrategia de oferta.</p>
+          </article>
+          <article class="service-card reveal">
+            <h3>Para vendedores</h3>
+            <p>Tasacion profesional, plan de marketing y gestion comercial integral.</p>
+          </article>
+          <article class="service-card reveal">
+            <h3>Para inversores</h3>
+            <p>Analisis de rentabilidad, zonas emergentes y oportunidades off-market.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section dark-section" id="equipo">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Nuestro equipo</p>
+            <h2>Asesores especializados para cada etapa del proceso</h2>
+          </div>
+
+          <div class="team-grid">
+            <article class="team-card reveal">
+              <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=700&q=80" alt="Asesor comercial" />
+              <h3>Juan Delgado</h3>
+              <p>Broker Senior - Ventas premium</p>
+            </article>
+            <article class="team-card reveal">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=700&q=80" alt="Asesora inmobiliaria" />
+              <h3>Valentina Suarez</h3>
+              <p>Consultora residencial</p>
+            </article>
+            <article class="team-card reveal">
+              <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=700&q=80" alt="Especialista inversiones" />
+              <h3>Sebastian Rios</h3>
+              <p>Analista de inversiones</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container testimonials">
+        <div class="section-head reveal">
+          <p class="eyebrow dark">Testimonios</p>
+          <h2>Clientes que encontraron su proximo hogar con nosotros</h2>
+        </div>
+
+        <div class="test-grid">
+          <blockquote class="quote reveal">
+            "Compramos nuestro departamento en Palermo con acompanamiento total.
+            El proceso fue ordenado, claro y sin sorpresas."<cite>- Paula y Nicolas</cite>
+          </blockquote>
+          <blockquote class="quote reveal">
+            "Vendi mi casa en menos de 45 dias. Excelente calidad de leads y negociacion."<cite>- Mariano C.</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="section contact" id="contacto">
+        <div class="container contact-wrap reveal">
+          <div>
+            <p class="eyebrow">Contacto</p>
+            <h2>Solicita una visita o una tasacion sin costo</h2>
+            <p class="contact-copy">
+              Dejanos tus datos y un asesor se comunicara en menos de 24 horas.
+            </p>
+            <ul class="contact-list">
+              <li>+54 11 5555-1234</li>
+              <li>contacto@aureainmobiliaria.com</li>
+              <li>Av. Libertador 2450, CABA</li>
+            </ul>
+          </div>
+
+          <form class="contact-form" onsubmit="event.preventDefault(); alert('Gracias. Este formulario es una demo estatica.');">
+            <label>Nombre<input type="text" required placeholder="Tu nombre" /></label>
+            <label>Email<input type="email" required placeholder="tu@email.com" /></label>
+            <label>Telefono<input type="tel" placeholder="+54 11 ..." /></label>
+            <label>Mensaje<textarea rows="4" placeholder="Que tipo de propiedad estas buscando?"></textarea></label>
+            <button type="submit" class="btn btn-primary">Enviar consulta</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© 2026 Aurea Inmobiliaria. Sitio demo para presentacion comercial.</p>
+        <a href="#inicio">Volver arriba</a>
+      </div>
+    </footer>
+
+    <div class="modal" id="property-modal" aria-hidden="true">
+      <div class="modal-backdrop" data-close="true"></div>
+      <div class="modal-content">
+        <button class="modal-close" data-close="true" aria-label="Cerrar">×</button>
+        <img id="modal-image" src="" alt="Detalle de propiedad" />
+        <h3 id="modal-title"></h3>
+        <p id="modal-description"></p>
+        <p id="modal-price" class="modal-price"></p>
+        <a class="btn btn-primary" href="#contacto" data-close="true">Quiero esta propiedad</a>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
